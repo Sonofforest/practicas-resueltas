@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="deseno.css">
+    <link rel="icon" href="TYPES/logo.png" />
+    <title>Team Maker</title>
+</head>
+
+</head>
+<body>
+    
+
+    <header>        <h1 style="cursor: default;">Team Maker</h1>
+    <div class="search-bar"> <form action="../../form-result.php" method="post" target="_blank">
+    <p><input type="search" id="searchInput" placeholder="Buscar Pokémon..." size="20" maxlength="17" class="inputsearch"></p>
+    </form>
+    
+    </div>
+    
+    </header>
+    <label for="typeFilter">Tipo:</label>
+<select id="typeFilter">
+  <option value="all">Todos los tipos</option>
+  <option value="water">Agua</option>
+  <option value="fire">Fuego</option>
+  <option value="grass">Planta</option>
+  <option value="electric">Electrico</option>
+  <option value="fighting">Lucha</option>
+  <option value="psychic">Psiquico</option>
+  <option value="dark">Siniestro</option>
+  <option value="ghost">Fantasma</option>
+  <option value="ice">Hielo</option>
+  <option value="flying">Volador</option>
+  <option value="ground">Tierra</option>
+  <option value="rock">Roca</option>
+  <option value="steel">Acero</option>
+  <option value="poison">Veneno</option>
+  <option value="fairy">Hada</option>
+  <option value="normal">Normal</option>
+  <option value="dragon">Dragón</option>
+  <option value="bug">Bicho</option>
+</select>
+<label for="regionFilter">Región:</label>
+<select id="regionFilter">
+    <option value="all">Todas las regiones</option>
+    <option value="kanto">Kanto</option>
+    <option value="johto">johto</option>
+    <option value="hoenn">Hoenn</option>
+    <option value="sinnoh">Sinnoh</option>
+    <option value="teselia">Teselia</option>
+    <option value="kalos">Kalos</option>
+    <option value="alola">Alola</option>
+    <option value="galar">Galar</option>
+    <option value="paldea">Paldea</option>
+    <option value="hisui">Hisui</option>
+</select>
+<label for="legendaryFilter">Vista:</label>
+<select id="legendaryFilter">
+  <option value="all">Todos</option>
+  <option value="legendary">Legendarios</option>
+  <option value="megas">Megaevoluciones</option>
+</select>
+    <div style="cursor: default;" id="flex-container" class="hidden">
+        <button id="closeButton" class="close-button">X</button>
+    </div>
+    <div id="team-container" class="team-container">
+        <div class="team-grid">
+            <img id="pokeball-0" src="TYPES/bola.png" alt="pokeball">
+            <img id="pokeball-1" src="TYPES/bola.png" alt="pokeball">
+            <img id="pokeball-2" src="TYPES/bola.png" alt="pokeball">
+            <img id="pokeball-3" src="TYPES/bola.png" alt="pokeball">
+            <img id="pokeball-4" src="TYPES/bola.png" alt="pokeball">
+            <img id="pokeball-5" src="TYPES/bola.png" alt="pokeball"></div>
+    </div>
+    <div class="pokedex"></div>
+    <div id="types-container" class="types-container">
+
+    </div>
+    <div ><img class="logo" src="TYPES/logo.png" alt="logo"></div>
+
+    <script src="javascri.js"></script>
+</body>
+</html>

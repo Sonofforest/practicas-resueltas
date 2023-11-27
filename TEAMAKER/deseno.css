@@ -1,0 +1,245 @@
+
+
+
+.close-button {
+  /* Estilos para el botón de cerrar */
+  top: 580px;
+  left: 115px;
+  background-color: #495879;
+  color: #fff;
+ position: absolute;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.espacio{
+  display: flex;
+  gap: 50px;
+  margin-bottom: 3%;
+}
+.types-container{
+  position: absolute;
+  top: 40px;
+}
+.tamanio{
+  margin-top: 9%;
+  width: 50px;
+  height: 20px;
+}
+.inputsearch{
+  border-radius: 20px;
+}
+.search-bar {
+  border: none; 
+  position: absolute;
+  top: 55px; 
+  right: 575px; 
+}
+#flex-container{
+  z-index: 99;
+  position:fixed;
+  display: flex;
+  flex-direction: column;
+  top: 0px;
+  right: 0px;
+  width: 418px;
+  height: 865px;
+  background-color: #617cb6;
+  }
+#searchInput {
+  padding: 2%;
+  font-size: 16px;
+}
+#searchButton {
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #32549e;
+}
+header {
+  background-color: #32549e;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 1rem 0;
+}
+
+
+
+.pokedex {
+  
+  display: grid;
+  grid-template-columns: repeat(9, 90px);
+  gap: 10px;
+  padding: 10px;
+  background-color: #32549e;
+  
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.pokemon-card {
+  border: 1px solid #32549e;
+  padding: 0px;
+  background-color: rgb(70, 66, 66);
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1); 
+  display: flex;
+  align-items: center;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.pokemon-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1000px) {
+  .pokedex {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 10px;
+  }
+}
+
+.stat-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5px; 
+}
+
+.stat-name {
+  font-weight: bold; 
+}
+
+.stat-bar-container {
+  width: 200%; 
+  background-color: #9badd3;
+  height: 10px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.stat-bar {
+  height: 100%;
+  border-radius: 5px;
+  background-color: #4CAF50; 
+  
+}
+
+.stat-value {
+  margin-top: 3px; 
+  font-size: 18px; 
+  }
+
+  .pokemon-info{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  
+
+  }
+
+  .hidden {
+    visibility: hidden ;
+    opacity: 0;
+    transition: opacity .3s linear;
+ 
+  }
+
+  .unhidden{
+    opacity: 1;
+   visibility: visible;
+  }
+
+  .team-container {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-top: 2%; 
+  
+  
+  }
+
+  .team-grid {
+    z-index: 88;
+    padding: 30px;
+  display: flex;
+  grid-template-columns: 1fr; 
+  gap:2%;
+  border-width: 2px;
+  background-color: #32549e;
+  background-repeat: space;
+  
+
+  }
+  .golden-background-stats {
+  background: linear-gradient(to bottom right, white,gold, gold,gold,white,gold,gold,gold,white);
+    background-size: cover;
+  }
+  .ultra-background-stats{
+    background-size: cover;
+  background: linear-gradient(to bottom right, white,rgb(247,122,143), blue,rgb(247, 122, 143), white,blue,rgb(247, 122, 143),white);
+  }
+  .mega-background-stats{
+    background:linear-gradient(to bottom right, red, orange, lightyellow, yellow,lightgreen,skyblue,blue,pink,violet); 
+    background-size: cover;
+  }
+  .filters {
+  margin-bottom: 2%; 
+  }
+  .popup_disable {
+    visibility: hidden;
+ 
+    background-color: darkslateblue;
+    font-style: initial;
+   color: antiquewhite;
+    opacity: 0;
+    transition: opacity .3s linear;
+    align-items: center;
+    position: absolute;
+    top: 52%;
+    z-index: 999;
+    
+    border-color: black;
+  }
+  .popup_enable {
+  opacity: 1;
+  visibility: visible;
+  z-index: 999;
+  } 
+  .btn{
+    font-size: medium;
+    font-style: inherit;
+    border: none; 
+    color: rgb(0, 0, 0); 
+    padding: 10px 2px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    position: absolute;
+    top: 66%;
+  }
+  .bts{
+    font-size: small;
+    font-style: inherit;
+    border: none; 
+    color: rgb(0, 0, 0); 
+    padding: 8px 2px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+  }
+
+  .logo{
+    position: absolute;
+    top: 5%;
+    left: 37.5%;
+    width: 5%;
+    
+  }
+
