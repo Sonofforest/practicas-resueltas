@@ -1,0 +1,48 @@
+body{margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 100px;
+  background-color:red;
+    
+  }
+  #id {
+    background-image: URL("friv.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+
+  div {
+  border-style: solid; /* Borde continuo, solido */
+  }
+  div {
+    border-width: 10px; /* Todos los bordes son de 10px */
+    border-color: yellow;
+  }
+  div {
+    color: whitesmoke; /* Asgina un color al texto */
+    text-align: center; /* Alinea todo el texto en el centro */
+    text-decoration-line: underline; /* Añade una linea debajo del texto */
+    text-transform: uppercase; /* Pone todo el texto en mayuscula */
+  
+    font-family: "Times New Roman", Times, serif;
+    /* Se asignan 3 tipos de fuentes al texto, si una letra no tiene estilo para "Times New Roman" se intenta asignar la siguiente y asi sucesivamente */
+  }
+  
+  section{
+    color: whitesmoke; /* Asgina un color al texto */
+    text-align: center; /* Alinea todo el texto en el centro */
+    text-transform: uppercase; /* Pone todo el texto en mayuscula */
+  
+    font-family: "Times New Roman", Times, serif;
+    /* Se asignan 3 tipos de fuentes al texto, si una letra no tiene estilo para "Times New Roman" se intenta asignar la siguiente y asi sucesivamente */
+  }
+  section {
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 1000px;
+  }
